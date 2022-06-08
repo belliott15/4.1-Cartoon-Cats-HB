@@ -15,6 +15,7 @@ describe('cats routes', () => {
     const expected = cats.map((cat) => {
       return { id: cat.id, name: cat.name };
     });
+    console.log('expected', expected);
     expect(res.body).toEqual(expected);
   });
 
